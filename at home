@@ -1,0 +1,43 @@
+nt l_motor = 0;
+int r_motor = 2;
+int speed = 85; 
+int slow = 20;
+int target = 250;
+int pause = 350;	
+int tophat = 5;
+int left_bump = 8;
+int right_bump = 9;
+int black_target = 700;
+
+
+int main()
+
+{
+int stuff=0;
+	
+for (int stuff=0; stuff<=6; stuff++)
+{
+printf("%d\n",stuff);
+go();
+}
+   
+return 0;
+}
+
+// def 
+void forwards(){
+	motor(l_motor,speed);// def for it go forward 
+	motor(r_motor,speed);
+}
+
+void backwards(){
+	motor(l_motor,-speed);// def for it go backwards 
+	motor(r_motor,-speed);
+}
+
+void go(){
+forwards();
+msleep(200);
+backwards();
+msleep(200);
+}
