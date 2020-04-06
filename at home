@@ -1,4 +1,4 @@
-nt l_motor = 0;
+int l_motor = 0;
 int r_motor = 2;
 int speed = 85; 
 int slow = 20;
